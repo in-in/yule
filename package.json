@@ -1,0 +1,22 @@
+{
+  "name": "yule",
+  "version": "1.0.0",
+  "description": "Responsive email newsletter",
+  "scripts": {
+    "dist": "NODE_ENV='production' gulp",
+    "ncu": "ncu",
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-mjml": "^3.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "npm-check-updates": "^2.15.0"
+  }
+}

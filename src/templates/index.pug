@@ -1,0 +1,18 @@
+include /variables.pug
+include /social.pug
+
+mjml
+
+  include /head.pug
+
+  mj-body(width='800px')
+
+    mj-hero(
+      mode='fixed-height'
+      height='600px'
+      background-color="#001516"
+      background-url=`${imagePath}bg_hero.jpg`)
+
+    mj-section
+      mj-column
+        +social(['facebook', 'twitter', 'pinterest', 'dribbble'])
