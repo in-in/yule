@@ -1,0 +1,9 @@
+mixin credit-badge(author, url)
+
+  mj-text(
+    align='right'
+    css-class='credit-badge')
+    | Photo by 
+    a(href=`https://unsplash.com/photos/${url}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`
+    target='_blank'
+    rel='noopener noreferrer')= author
