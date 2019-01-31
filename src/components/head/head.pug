@@ -1,6 +1,7 @@
 mj-head
 
   mj-title Yule
+  mj-preview Hello Yule!
 
   mj-font(
     name='Tinos'
@@ -8,14 +9,13 @@ mj-head
 
   mj-attributes
 
-    mj-all(font-family='Tinos, serif')
-    mj-section(padding='0')
-    mj-image(padding='0')
-    mj-text(padding='0')
-    include mj-class.pug
+    mj-all(
+      font-family='Tinos, serif'
+      padding='0'
+      inner-padding='0')
 
   mj-style(inline='inline')
     include ../../../tmp/styles/main.css
 
   mj-style
-    include ../../../tmp/styles/media.css
+    include ../../../tmp/styles/main_mq.css

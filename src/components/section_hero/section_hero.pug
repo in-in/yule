@@ -1,0 +1,13 @@
+include /logo/logo.pug
+include /heading/heading.pug
+
+mixin section_hero()
+
+  mj-section(
+    css-class='section_hero'
+    background-color="#001516"
+    background-url=`${imagePath}bg_hero.jpg`)
+
+    mj-column()
+      +logo('Yule')
+      +heading('We wish you a Happy Christmas')

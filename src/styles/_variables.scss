@@ -1,7 +1,14 @@
 $colorAccent: #e01931;
-$colorBorderTransparent: rgba(255, 255, 255, 20%);
+$colorBackgroundTransparent: rgba(0, 0, 0, 0.2);
+$colorBorderTransparent: rgba(255, 255, 255, 0.2);
 $colorCardBackground: #222222;
 $colorSectionBackground: #d6effd;
 $colorTextBase: #666666;
 $colorTextDark: #333333;
 $colorWhite: #ffffff;
+
+@mixin mq {
+  @media all and (min-width: 480px) {
+    @content;
+  }
+}

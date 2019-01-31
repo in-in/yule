@@ -8,12 +8,12 @@ const path = {
   build: 'build/',
   src: 'src/',
   tmp: 'tmp/',
+  get components() {
+    return `${path.src}components/`;
+  },
   templates: {
     get src() {
-      return `${path.src}templates/*.pug`;
-    },
-    get includes() {
-      return `${path.src}templates/includes`;
+      return `${path.src}templates/screens/*.pug`;
     }
   },
   styles: {

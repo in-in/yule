@@ -1,0 +1,16 @@
+include ../variables.pug
+include /section_hero/section_hero.pug
+//- include /social.pug
+
+mjml
+
+  include /head/head.pug
+
+  mj-body(width='800px')
+
+    +section_hero()
+
+    mj-section
+      mj-column
+        mj-text()= path
+        //- +social(['facebook', 'twitter', 'pinterest', 'dribbble'])

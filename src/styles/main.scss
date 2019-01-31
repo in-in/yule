@@ -1,6 +1,2 @@
-@import 'reset';
 @import 'variables';
-
-.baz {
-  background-color: darken(black, 6%);
-}
+@import '../components/section_hero/section_hero';
