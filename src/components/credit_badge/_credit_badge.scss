@@ -1,0 +1,12 @@
+.credit_badge {
+  div {
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-size: 12px !important;
+    color: $colorWhite !important;
+  }
+
+  a {
+    color: darken($colorWhite, 20%) !important;
+  }
+}
