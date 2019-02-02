@@ -1,27 +1,29 @@
 .heading {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  padding-bottom: 111px !important;
+  padding-bottom: 110px !important;
 
   div {
     display: inherit;
     width: 488px;
     height: 208px;
+    margin: 0 !important;
     vertical-align: middle;
-    color: $colorWhite !important;
-    text-align: center !important;
-    font-size: 46px !important;
-    font-weight: bold;
-    line-height: 120% !important;
     border: 8px solid $colorBorderTransparent;
     background-color: $colorBackgroundTransparent;
+  }
+
+  h1 {
+    color: $colorWhite !important;
+    text-align: center !important;
+    font-weight: bold;
+    line-height: 120% !important;
+    font-size: 46px !important;
   }
 
   @include mq {
     padding-left: 0px !important;
     padding-right: 0px !important;
 
-    div {
+    h1 {
       font-size: 56px !important;
     }
   }

@@ -1,16 +1,16 @@
+include /section/section.pug
 include /logo/logo.pug
 include /heading/heading.pug
 include /credit-badge/credit-badge.pug
 
 mixin section-hero()
-
-  mj-section(
+  +section(
+    css-class="section section--hero",
     background-color="#001516"
     background-url=`${imagePath}bg_hero.jpg`)
-
-    mj-column(width='100%')
+    +set-block('container')
       +logo('Yule')
       +heading('We wish you a Happy Christmas')
-
-    mj-column(width='100%')
-      +credit-badge('Kieran White', 'SBdmQcW8qag')
+    +set-block('section')
+      mj-column(width='100%')
+        +credit-badge('Kieran White', 'SBdmQcW8qag')

@@ -1,2 +1,5 @@
 - const imagePath = devBuild ? 'assets/images/' : 'path/to/cdn/'
+- const blocks = {}
 
+mixin set-block(key)
+  - blocks[key] = this.block

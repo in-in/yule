@@ -1,8 +1,25 @@
-include /container/container.pug
+include /section/section.pug
 include /section-title/section-title.pug
+include /section-subtitle/section-subtitle.pug
+include /paragraph/paragraph.pug
+include /credit-badge/credit-badge.pug
 
 mixin section-desc()
 
-  mj-section
-    +container()
-      +section-title('Celebrate Merry Christmas')
+  +section()(css-class='section section--desc')
+
+    +set-block('container')
+
+      +section-title('Celebrate Merry Christmas')(
+        padding-bottom='20px')
+
+      +section-subtitle('Welcome to Christmas Party')(
+        padding-bottom='20px')
+
+      +paragraph('Fusce sed ligula nec nunc porta dapibus. Ut sapien velit, sollicitudin et lorem sit amet, auctor auctor eros. Proin nunc libero, pulvinar vitae pulvinar id, sollicitu din vitae sem. Sed rhoncus leo sit amet tortor dignissim. Ut sapien velit, sollicitudin et lorem sit amet, auctor. Fusce sed ligula nec nunc porta dapibus.')(padding-bottom='34px')
+
+      mj-image(src=`${imagePath}concert.jpg`)
+
+      +credit-badge('Aditya Chinchure', 'ZhQCZjr9fHo')
+
+      +set-block('section')

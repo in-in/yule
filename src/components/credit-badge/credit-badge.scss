@@ -1,9 +1,13 @@
 .credit-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
   div {
-    padding-right: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
     font-size: 12px !important;
     color: $colorWhite !important;
+    // background-color: rgba(0, 0, 0, 0.5) !important;
   }
 
   a {
