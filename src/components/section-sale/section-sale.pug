@@ -1,0 +1,32 @@
+include /section/section.pug
+include /section-title/section-title.pug
+include /card/card.pug
+
+mixin section-sale()
+
+  +section()(css-class='section section--sale section--container')
+
+    mj-column(width='100%')
+
+      +section-title('Christmas Sale')
+
+  +card({
+    type: 'left',
+    img: 'sale_sunglass.jpg',
+    title: 'On Sunglass',
+    subtitle: 'Provogue Aviator Sunglasses',
+    discount: '50% off*'})
+
+    +credit-badge('Tamara Bellis', 'd7CK4t8Lz6s')
+
+
+  +card({
+    type: 'right',
+    img: 'sale_bags.jpg',
+    title: 'On Hand Bags',
+    subtitle: 'Van Heusen Hand-held Bag',
+    discount: '60% off*'})(direction='rtl')
+
+    +credit-badge('Tamara Bellis', 'nOnT17lKYz8')
+
+  +section()(css-class='section section--sale-last')

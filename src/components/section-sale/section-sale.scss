@@ -1,0 +1,15 @@
+@import '../section-title/section-title.scss';
+@import '../card/card.scss';
+
+.section--sale {
+  background-color: $colorSectionBackground !important;
+
+  &-last {
+    background-color: $colorSectionBackground !important;
+    padding-bottom: 80px !important;
+  }
+
+  @include mq {
+    padding-bottom: 42px !important;
+  }
+}

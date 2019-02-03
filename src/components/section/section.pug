@@ -1,10 +1,3 @@
-include /container/container.pug
-
 mixin section()
   mj-section(css-class='section')&attributes(attributes)
     block
-    +container()
-      if blocks.container
-        - blocks.container()
-    if blocks.section
-      - blocks.section()

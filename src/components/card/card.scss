@@ -1,0 +1,93 @@
+@import '../button/button.scss';
+
+.card {
+  background-color: $colorSectionBackground !important;
+
+  > table > tbody > tr > td {
+    @include mq {
+      padding-left: 10% !important;
+      padding-right: 10% !important;
+    }
+  }
+
+  &__column {
+    max-width: 320px !important;
+    max-height: 352px !important;
+    height: 352px !important;
+
+    @include mq {
+      height: auto !important;
+      display: table-cell !important;
+    }
+  }
+
+  &__image {
+    position: relative !important;
+  }
+
+  &__info {
+    background-color: $colorCardBackground !important;
+  }
+
+  &__title h4,
+  &__subtitle p,
+  &__discount p {
+    margin: 0;
+    text-align: center;
+    color: $colorWhite !important;
+  }
+
+  &__title h4 {
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: rwd(54, 320);
+    padding-bottom: rwd(16, 320);
+
+    @include mq {
+      font-size: 18px !important;
+    }
+
+    @include mq-m {
+      font-size: 35px !important;
+    }
+  }
+
+  &__subtitle p {
+    font-size: 19px;
+    line-height: 150%;
+    padding-left: rwd(50, 320);
+    padding-right: rwd(50, 320);
+    padding-bottom: rwd(32, 320);
+
+    @include mq {
+      font-size: 12px !important;
+    }
+
+    @include mq-m {
+      font-size: 19px !important;
+    }
+  }
+
+  &__discount p {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: rwd(32, 320);
+
+    @include mq {
+      font-size: 15px !important;
+    }
+
+    @include mq-m {
+      font-size: 18px !important;
+    }
+
+    @include mq-l {
+      font-size: 28px !important;
+    }
+  }
+
+  &__button {
+    padding-bottom: rwd(32, 320) !important;
+  }
+}

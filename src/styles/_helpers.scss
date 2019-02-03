@@ -1,0 +1,21 @@
+@mixin mq {
+  @media all and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin mq-m {
+  @media all and (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin mq-l {
+  @media all and (min-width: 720px) {
+    @content;
+  }
+}
+
+@function rwd($target, $context) {
+  @return percentage($target / $context);
+}

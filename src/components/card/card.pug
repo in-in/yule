@@ -1,0 +1,28 @@
+include /button/button.pug
+include /credit-badge/credit-badge.pug
+
+mixin card(data)
+
+  mj-section(css-class='card')&attributes(attributes)
+    mj-column(
+      width='50%'
+      css-class='card__column card__image')
+
+      mj-image(src=`${imagePath}${data.img}`)
+
+      block
+
+    mj-column(
+      width='50%'
+      css-class='card__column card__info')
+
+      mj-text(css-class='card__title')
+        h4= data.title
+
+      mj-text(css-class='card__subtitle')
+        p= data.subtitle
+
+      mj-text(css-class='card__discount')
+        p= data.discount
+
+      +button('Buy now')(css-class='button card__button')

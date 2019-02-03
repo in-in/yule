@@ -1,10 +1,15 @@
 .heading {
   padding-bottom: 110px !important;
 
+  @include mq {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
   div {
     display: inherit;
-    width: 488px;
-    height: 208px;
+    width: 496px;
+    height: 216px;
     margin: 0 !important;
     vertical-align: middle;
     border: 8px solid $colorBorderTransparent;
@@ -17,13 +22,8 @@
     font-weight: bold;
     line-height: 120% !important;
     font-size: 46px !important;
-  }
 
-  @include mq {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-
-    h1 {
+    @include mq {
       font-size: 56px !important;
     }
   }

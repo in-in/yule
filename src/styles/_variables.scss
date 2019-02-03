@@ -6,9 +6,3 @@ $colorSectionBackground: #d6effd;
 $colorTextBase: #666666;
 $colorTextDark: #333333;
 $colorWhite: #ffffff;
-
-@mixin mq {
-  @media all and (min-width: 480px) {
-    @content;
-  }
-}

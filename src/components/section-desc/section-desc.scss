@@ -1,9 +1,4 @@
-@import '../container/container.scss';
 @import '../section-title/section-title.scss';
 @import '../section-subtitle/section-subtitle.scss';
 @import '../paragraph/paragraph.scss';
-
-.section--desc {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
+@import '../credit-badge/credit-badge.scss';
