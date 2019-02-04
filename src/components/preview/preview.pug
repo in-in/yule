@@ -14,3 +14,7 @@ mixin preview(data)
 
       mj-text(css-class='preview__desc')
         p= data.desc
+
+    if data.spacer
+      mj-column(width='100%')
+        mj-spacer(height='24px')
