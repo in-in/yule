@@ -1,0 +1,16 @@
+mixin preview(data)
+
+  mj-section(css-class='preview')&attributes(attributes)
+    mj-column(css-class='preview__image')
+
+      mj-image(src=`${imagePath}${data.img}`)
+
+      block
+
+    mj-column(css-class='preview__info')
+
+      mj-text(css-class='preview__title')
+        h4= data.title
+
+      mj-text(css-class='preview__desc')
+        p= data.desc

@@ -6,7 +6,7 @@ include /credit-badge/credit-badge.pug
 
 mixin section-desc()
 
-  +section()(css-class='section section--container')
+  +section()(css-class='section section--container section--container-gap')
 
     mj-column(width='100%' css-class='credit-badge-wrapper')
       +section-title('Celebrate Merry Christmas')(
@@ -20,3 +20,5 @@ mixin section-desc()
       mj-image(src=`${imagePath}concert.jpg`)
 
       +credit-badge('Aditya Chinchure', 'ZhQCZjr9fHo')
+
+  +section()(css-class='section section--container section--container-gap')

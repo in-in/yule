@@ -1,10 +1,11 @@
 include /section/section.pug
 include /section-title/section-title.pug
 include /card/card.pug
+include /credit-badge/credit-badge.pug
 
 mixin section-sale()
 
-  +section()(css-class='section section--sale section--container')
+  +section()(css-class='section section--sale section--container section--container-gap')
 
     mj-column(width='100%')
 

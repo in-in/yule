@@ -1,0 +1,35 @@
+include /section/section.pug
+include /section-title/section-title.pug
+include /preview/preview.pug
+include /credit-badge/credit-badge.pug
+
+mixin section-party()
+
+  +section()(css-class='section section--container section--container-gap')
+
+    mj-column(width='100%')
+
+      +section-title('Party Night')(padding-bottom='56px')
+
+  +preview({
+    img: 'party_food.jpg',
+    title: 'Food and Drinks',
+    desc: 'Lorem Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id. Lorem Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id.'})
+
+    +credit-badge('Toa Heftiba', 'OSwea3yxjT0')
+
+  +preview({
+    img: 'party_gifts.jpg',
+    title: 'Gifts',
+    desc: 'Lorem Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id. Lorem Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id.'})
+
+    +credit-badge('Roberto Nickson', 'u6fDUe2x11g')
+
+  +preview({
+    img: 'party_prayer.jpg',
+    title: 'Prayer',
+    desc: 'Lorem Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id. Lorem Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id.'})
+
+    +credit-badge('Ben White', 'ReEqHw2GyeI')
+
+  +section()(css-class='section section--container section--container-gap')

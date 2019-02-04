@@ -1,13 +1,20 @@
 .section {
   &--container {
-    padding-top: 50px;
-    padding-bottom: 50px;
     padding-left: 10px;
     padding-right: 10px;
 
+    &-gap {
+      padding-top: 50px;
+
+      @include mq {
+        padding-top: 80px !important;
+      }
+    }
+
     @include mq {
       max-width: 640px !important;
-      padding: 80px !important;
+      padding-left: 80px !important;
+      padding-right: 80px !important;
     }
   }
 }

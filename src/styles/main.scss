@@ -4,3 +4,9 @@
 @import '../components/section-hero/section-hero.scss';
 @import '../components/section-desc/section-desc.scss';
 @import '../components/section-sale/section-sale.scss';
+@import '../components/section-party/section-party.scss';
+
+.body {
+  max-width: 800px !important;
+  margin: 0 auto;
+}

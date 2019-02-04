@@ -1,0 +1,44 @@
+.preview {
+  @extend %container;
+  padding-bottom: 24px;
+
+  &__image {
+    position: relative !important;
+
+    @include mq {
+      width: rwd(216, 640) !important;
+      max-width: 216px !important;
+    }
+  }
+
+  &__info {
+    padding-top: 8px;
+
+    @include mq {
+      width: rwd(376, 640) !important;
+      max-width: 376px !important;
+      padding-left: rwd(24, 640);
+      padding-right: rwd(24, 640);
+    }
+  }
+
+  &__title h4,
+  &__desc p {
+    margin: 0;
+    text-align: left;
+  }
+
+  &__title h4 {
+    color: $colorAccent !important;
+    font-size: 22px !important;
+    font-weight: bold;
+    line-height: 130% !important;
+    padding-bottom: 25px;
+  }
+
+  &__desc p {
+    color: $colorTextBase !important;
+    font-size: 16px !important;
+    line-height: 150%;
+  }
+}
