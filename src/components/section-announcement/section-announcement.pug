@@ -1,0 +1,21 @@
+include /button/button.pug
+include /credit-badge/credit-badge.pug
+
+mixin section-announcement()
+  +section(
+    css-class="section section--announcement",
+    background-color="black"
+    background-url=`${imagePath}bg_announcement.jpg`)
+
+    mj-column(width='100%')
+
+      mj-text(css-class='section__announcement-title')
+        p Enjoy the live Music
+
+      mj-text(css-class='section__announcement-subtitle')
+        p Christmas Concert - 2019
+
+      +button('Join Now')(css-class='button section__announcement-button')
+
+    mj-column(width='100%')
+      +credit-badge('Kyle Wong', 'rrHtkX1rLP0')
