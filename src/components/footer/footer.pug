@@ -1,0 +1,39 @@
+include /section/section.pug
+include /social/social.pug
+include /credit-badge/credit-badge.pug
+
+mixin footer()
+
+  +section(
+    css-class="section footer"
+    background-color="black"
+    background-url=`${imagePath}bg_footer.jpg`)
+
+    mj-column(width='100%')
+      mj-spacer(css-class='footer__spacer')
+
+    mj-column(width='100%' padding-bottom='8px')
+      +social(['facebook', 'twitter', 'pinterest', 'dribbble'])
+
+    mj-column(width='100%')
+      mj-text(css-class="footer__text")
+        p You are receiving this email because you subscribed to our mailing list.
+
+    mj-column(width='100%')
+      mj-text(css-class="footer__text")
+        p
+          a(href='#0') Click here 
+          | to 
+          a(href='#0') unsubscribe 
+          | your email address from this list.
+
+    mj-column(width='100%')
+      mj-text(
+        css-class="footer__text"
+        padding-top='15px')
+        p
+          | © 2019 Yule. All rights reserved. Design by 
+          a(href='https://w3layouts.com/yule-newsletter-responsive-email-template/') W3layouts
+
+    mj-column(width='100%')
+      +credit-badge('Tim Mossholder', 'MHBKAX68FWk')

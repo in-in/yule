@@ -1,0 +1,29 @@
+.footer {
+  height: 352px !important;
+  max-height: 352px !important;
+  position: relative !important;
+  @extend %container;
+
+  &__text {
+    p {
+      margin: 0;
+      text-align: center;
+      font-size: 16px !important;
+      line-height: 160% !important;
+      color: $colorWhite !important;
+    }
+
+    a {
+      text-decoration: none;
+      color: $colorAccent !important;
+    }
+  }
+
+  &__spacer {
+    padding-top: 15.625% !important;
+
+    > div {
+      height: 100% !important;
+    }
+  }
+}
