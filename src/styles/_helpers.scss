@@ -26,8 +26,6 @@
   padding-right: 10px;
 
   @include mq {
-    // padding-left: 80px !important;
-    // padding-right: 80px !important;
     padding-left: rwd(80, 800) !important;
     padding-right: rwd(80, 800) !important;
   }

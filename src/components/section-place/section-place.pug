@@ -1,0 +1,49 @@
+include /section/section.pug
+include /subtitle/subtitle.pug
+include /title-accent/title-accent.pug
+include /paragraph/paragraph.pug
+include /credit-badge/credit-badge.pug
+
+mixin section-place()
+
+  +section()(css-class='section section--container-gap section--place')
+
+    mj-column(width='100%')
+
+      +subtitle('Place and Time')(padding-bottom='56px')
+
+    mj-column(
+      css-class='section__place'
+      width='50%')
+
+      mj-image(
+        css-class='section__place-image'
+        src=`${imagePath}address_place.jpg`)
+
+      +credit-badge('Sylwia Bartyzel', 'D2K1UZr4vxk')(padding-bottom='71.2%')
+
+      mj-spacer(css-class='section__place-spacer')
+
+      mj-image(
+        css-class='section__place-image'
+        src=`${imagePath}address_time.jpg`)
+
+      +credit-badge('Ian Keefe', 'OgcJIKRnRC8')
+
+    mj-column(
+      css-class='section__place section__place-time'
+      width='50%')
+
+      +title-accent('Place')(padding-bottom='8px')
+      +paragraph('333 Broome St New York, NY 10002, USA')
+
+      mj-spacer(css-class='section__place-spacer')
+
+      +title-accent('Time')(padding-bottom='8px')
+      +paragraph('Dec 25th 2019 at 6.30pm to 12.00am')
+
+      mj-spacer(css-class='section__place-spacer')
+
+      +paragraph('Lorem Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus')
+
+  +section()(css-class='section section--container-gap')

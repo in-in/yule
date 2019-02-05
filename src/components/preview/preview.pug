@@ -1,3 +1,6 @@
+include /title-accent/title-accent.pug
+include /paragraph/paragraph.pug
+
 mixin preview(data)
 
   mj-section(css-class='preview')&attributes(attributes)
@@ -9,11 +12,9 @@ mixin preview(data)
 
     mj-column(css-class='preview__info')
 
-      mj-text(css-class='preview__title')
-        h4= data.title
+      +title-accent(data.title)(padding-bottom='25px')
 
-      mj-text(css-class='preview__desc')
-        p= data.desc
+      +paragraph(data.desc)
 
     if data.spacer
       mj-column(width='100%')

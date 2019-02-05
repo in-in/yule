@@ -1,5 +1,5 @@
 include /section/section.pug
-include /section-title/section-title.pug
+include /subtitle/subtitle.pug
 include /preview/preview.pug
 include /credit-badge/credit-badge.pug
 
@@ -9,7 +9,7 @@ mixin section-party()
 
     mj-column(width='100%')
 
-      +section-title('Party Night')(padding-bottom='56px')
+      +subtitle('Party Night')(padding-bottom='56px')
 
   +preview({
     img: 'party_food.jpg',

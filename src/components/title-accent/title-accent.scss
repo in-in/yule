@@ -1,9 +1,9 @@
-.section-subtitle {
+.title-accent {
   p {
     margin: 0 !important;
+    color: $colorAccent !important;
     font-size: 23px !important;
     font-weight: bold;
-    text-align: center !important;
-    color: $colorAccent !important;
+    line-height: 130% !important;
   }
 }

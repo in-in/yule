@@ -1,6 +1,6 @@
 include /section/section.pug
-include /section-title/section-title.pug
-include /section-subtitle/section-subtitle.pug
+include /subtitle/subtitle.pug
+include /title-accent/title-accent.pug
 include /paragraph/paragraph.pug
 include /credit-badge/credit-badge.pug
 
@@ -9,13 +9,16 @@ mixin section-desc()
   +section()(css-class='section section--container section--container-gap')
 
     mj-column(width='100%' css-class='credit-badge-wrapper')
-      +section-title('Celebrate Merry Christmas')(
+      +subtitle('Celebrate Merry Christmas')(
         padding-bottom='20px')
 
-      +section-subtitle('Welcome to Christmas Party')(
+      +title-accent('Welcome to Christmas Party')(
+        align='center'
         padding-bottom='20px')
 
-      +paragraph('Fusce sed ligula nec nunc porta dapibus. Ut sapien velit, sollicitudin et lorem sit amet, auctor auctor eros. Proin nunc libero, pulvinar vitae pulvinar id, sollicitu din vitae sem. Sed rhoncus leo sit amet tortor dignissim. Ut sapien velit, sollicitudin et lorem sit amet, auctor. Fusce sed ligula nec nunc porta dapibus.')(padding-bottom='34px')
+      +paragraph('Fusce sed ligula nec nunc porta dapibus. Ut sapien velit, sollicitudin et lorem sit amet, auctor auctor eros. Proin nunc libero, pulvinar vitae pulvinar id, sollicitu din vitae sem. Sed rhoncus leo sit amet tortor dignissim. Ut sapien velit, sollicitudin et lorem sit amet, auctor. Fusce sed ligula nec nunc porta dapibus.')(
+        align='center'
+        padding-bottom='34px')
 
       mj-image(src=`${imagePath}concert.jpg`)
 

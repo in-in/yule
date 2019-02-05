@@ -1,0 +1,34 @@
+@import '../subtitle/subtitle.scss';
+
+.section {
+  &__place {
+    position: relative !important;
+    max-width: 400px !important;
+
+    &-time {
+      padding-top: 7.5%;
+
+      @include mq {
+        padding-top: 1.25% !important;
+      }
+
+      > table > tbody > tr > td {
+        @include mq {
+          padding-left: 7.5% !important;
+        }
+      }
+    }
+  }
+
+  &__place-spacer {
+    padding-bottom: 7.5% !important;
+
+    > div {
+      height: 100% !important;
+    }
+  }
+
+  &--place {
+    @extend %container;
+  }
+}
