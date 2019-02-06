@@ -1,6 +1,7 @@
-mixin logo(text)
+mixin logo(opts={})
+
+  - const className = 'logo'
 
   mj-button(
-    css-class='logo'
-    href='/'
-  )= text
+    css-class=opts.cssClass ? className + ' ' + opts.cssClass : className
+    href='/')&attributes(attributes)= opts.text

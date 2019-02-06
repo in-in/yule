@@ -20,13 +20,13 @@
   @return percentage($target / $context);
 }
 
-%container {
-  max-width: 640px !important;
-  padding-left: 10px;
-  padding-right: 10px;
+// %container {
+//   max-width: 640px !important;
+//   padding-left: 10px;
+//   padding-right: 10px;
 
-  @include mq {
-    padding-left: rwd(80, 800) !important;
-    padding-right: rwd(80, 800) !important;
-  }
-}
+//   @include mq {
+//     padding-left: rwd(80, 800) !important;
+//     padding-right: rwd(80, 800) !important;
+//   }
+// }

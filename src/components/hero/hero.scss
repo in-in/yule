@@ -1,0 +1,21 @@
+@import '../container/container.scss';
+@import '../logo/logo.scss';
+@import '../heading/heading.scss';
+@import '../credit-badge/credit-badge.scss';
+
+.hero {
+  @extend %container;
+  max-height: 600px !important;
+  position: relative !important;
+  background-repeat: no-repeat !important;
+
+  &__spacer {
+    &-logo {
+      padding-top: rwd(136, $containerWidth) !important;
+    }
+
+    &-bottom {
+      padding-top: rwd(120, $containerWidth) !important;
+    }
+  }
+}

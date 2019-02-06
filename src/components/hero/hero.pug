@@ -1,0 +1,27 @@
+include /logo/logo.pug
+include /heading/heading.pug
+include /spacer/spacer.pug
+include /credit-badge/credit-badge.pug
+
+mixin hero()
+
+  - const className = 'hero'
+
+  mj-section(
+    css-class=className
+    background-color='black'
+    background-url=`${imagePath}bg_hero.jpg`)&attributes(attributes)
+
+    mj-column(width='100%')
+
+      +logo({text: 'Yule'})
+
+      +spacer({cssClass: className + '__spacer-logo'})
+
+      +heading('We wish you a Happy Christmas')
+
+      +spacer({cssClass: className + '__spacer-bottom'})
+
+    mj-column(width='100%')
+
+      +credit-badge('Kieran White', 'SBdmQcW8qag')

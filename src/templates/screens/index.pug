@@ -1,5 +1,6 @@
 include ../variables.pug
-include /section-hero/section-hero.pug
+
+include /hero/hero.pug
 include /section-desc/section-desc.pug
 include /section-sale/section-sale.pug
 include /section-party/section-party.pug
@@ -13,7 +14,7 @@ mjml
 
   mj-body(width='800px' css-class='body')
 
-    +section-hero()
+    +hero()
     +section-desc()
     +section-sale()
     +section-party()
