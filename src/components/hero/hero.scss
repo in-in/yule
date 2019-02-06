@@ -6,8 +6,6 @@
 .hero {
   @extend %container;
   max-height: 600px !important;
-  position: relative !important;
-  background-repeat: no-repeat !important;
 
   &__spacer {
     &-logo {

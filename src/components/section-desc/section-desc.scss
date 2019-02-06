@@ -1,4 +1,21 @@
+@import '../container/container.scss';
 @import '../subtitle/subtitle.scss';
 @import '../title-accent/title-accent.scss';
 @import '../paragraph/paragraph.scss';
 @import '../credit-badge/credit-badge.scss';
+
+.section-desc {
+  @extend %container;
+
+  &__spacer {
+    padding-top: rwd(80, $containerWidth) !important;
+
+    &-subtitle {
+      padding-top: rwd(16, $containerWidth) !important;
+    }
+
+    &-text {
+      padding-top: rwd(24, $containerWidth) !important;
+    }
+  }
+}

@@ -1,9 +1,13 @@
 .subtitle {
   h2 {
     margin: 0 !important;
-    font-size: 42px !important;
+    font-size: 38px !important;
     font-weight: bold;
     text-align: center !important;
     color: $colorTextDark !important;
+
+    @include mq {
+      font-size: 42px !important;
+    }
   }
 }

@@ -1,27 +1,34 @@
-include /section/section.pug
 include /subtitle/subtitle.pug
 include /title-accent/title-accent.pug
 include /paragraph/paragraph.pug
+include /spacer/spacer.pug
 include /credit-badge/credit-badge.pug
 
 mixin section-desc()
 
-  +section()(css-class='section section--container section--container-gap')
+  - const className = 'section-desc'
+
+  mj-section(css-class=className)
 
     mj-column(width='100%' css-class='credit-badge-wrapper')
-      +subtitle('Celebrate Merry Christmas')(
-        padding-bottom='20px')
 
-      +title-accent('Welcome to Christmas Party')(
-        align='center'
-        padding-bottom='20px')
+      +spacer({cssClass: className + '__spacer'})
 
-      +paragraph('Fusce sed ligula nec nunc porta dapibus. Ut sapien velit, sollicitudin et lorem sit amet, auctor auctor eros. Proin nunc libero, pulvinar vitae pulvinar id, sollicitu din vitae sem. Sed rhoncus leo sit amet tortor dignissim. Ut sapien velit, sollicitudin et lorem sit amet, auctor. Fusce sed ligula nec nunc porta dapibus.')(
-        align='center'
-        padding-bottom='34px')
+      +subtitle('Celebrate Merry Christmas')
+
+      +spacer({cssClass: className + '__spacer-subtitle'})
+
+      +title-accent('Welcome to Christmas Party')(align='center')
+
+      +spacer({cssClass: className + '__spacer-text'})
+
+      +paragraph('Fusce sed ligula nec nunc porta dapibus. Ut sapien velit, sollicitudin et lorem sit amet, auctor auctor eros. Proin nunc libero, pulvinar vitae pulvinar id, sollicitu din vitae sem. Sed rhoncus leo sit amet tortor dignissim. Ut sapien velit, sollicitudin et lorem sit amet, auctor. Fusce sed ligula nec nunc porta dapibus.')(align='center')
+
+      +spacer({cssClass: className + '__spacer-text'})
 
       mj-image(src=`${imagePath}concert.jpg`)
 
       +credit-badge('Aditya Chinchure', 'ZhQCZjr9fHo')
 
-  +section()(css-class='section section--container section--container-gap')
+    mj-column(width='100%')
+      +spacer({cssClass: className + '__spacer'})
