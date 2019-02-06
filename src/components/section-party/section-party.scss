@@ -1,2 +1,15 @@
+@import '../container/container.scss';
 @import '../subtitle/subtitle.scss';
 @import '../preview/preview.scss';
+
+.section-party {
+  @extend %container;
+
+  &__spacer {
+    padding-top: rwd(80, $containerWidth) !important;
+
+    &-subtitle {
+      padding-top: rwd(40, $containerWidth) !important;
+    }
+  }
+}

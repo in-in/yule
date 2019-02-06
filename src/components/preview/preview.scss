@@ -2,8 +2,6 @@
   @extend %container;
 
   &__image {
-    position: relative !important;
-
     @include mq {
       width: rwd(216, 640) !important;
       max-width: 216px !important;

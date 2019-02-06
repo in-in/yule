@@ -1,15 +1,21 @@
-include /section/section.pug
 include /subtitle/subtitle.pug
 include /preview/preview.pug
+include /spacer/spacer.pug
 include /credit-badge/credit-badge.pug
 
 mixin section-party()
 
-  +section()(css-class='section section--container section--container-gap')
+  - const className = 'section-party'
+
+  mj-section(css-class=className)
 
     mj-column(width='100%')
 
-      +subtitle('Party Night')(padding-bottom='56px')
+      +spacer({cssClass: className + '__spacer'})
+
+      +subtitle('Party Night')
+
+      +spacer({cssClass: className + '__spacer-subtitle'})
 
   +preview({
     img: 'party_food.jpg',
@@ -34,4 +40,8 @@ mixin section-party()
 
     +credit-badge('Ben White', 'ReEqHw2GyeI')
 
-  +section()(css-class='section section--container section--container-gap')
+  mj-section(css-class=className)
+
+    mj-column(width='100%')
+
+      +spacer({cssClass: className + '__spacer'})

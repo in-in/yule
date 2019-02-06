@@ -3,14 +3,17 @@ include /paragraph/paragraph.pug
 
 mixin preview(data)
 
-  mj-section(css-class='preview')&attributes(attributes)
-    mj-column(css-class='preview__image')
+  - const className = 'preview'
+
+  mj-section(css-class=className)&attributes(attributes)
+
+    mj-column(width='100%' css-class=className + '__image credit-badge-wrapper')
 
       mj-image(src=`${imagePath}${data.img}`)
 
       block
 
-    mj-column(css-class='preview__info')
+    mj-column(width='100%' css-class=className + '__info')
 
       +title-accent(data.title)(padding-bottom='25px')
 
