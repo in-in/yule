@@ -1,0 +1,33 @@
+include /button/button.pug
+include /spacer/spacer.pug
+include /credit-badge/credit-badge.pug
+
+mixin announcement()
+
+  - const className = 'announcement'
+
+  mj-section(
+    css-class=className + ' credit-badge-wrapper'
+    background-color='black'
+    background-url=`${imagePath}bg_announcement.jpg`)
+
+    mj-column(width='100%')
+
+      +spacer({cssClass: className + '__spacer'})
+
+      mj-text(css-class=className + '__title')
+        p Enjoy the live Music
+
+      +spacer({cssClass: className + '__spacer-text'})
+
+      mj-text(css-class=className+ '__subtitle')
+        p Christmas Concert - 2019
+
+      +spacer({cssClass: className + '__spacer-text'})
+
+      +button('Join Now')(align='right')
+
+      +spacer({cssClass: className + '__spacer'})
+
+    mj-column(width='100%')
+      +credit-badge('Kyle Wong', 'rrHtkX1rLP0')

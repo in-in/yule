@@ -1,0 +1,31 @@
+@import '../container/container.scss';
+@import '../credit-badge/credit-badge.scss';
+
+.announcement {
+  @extend %container;
+  max-height: 336px !important;
+
+  &__title p,
+  &__subtitle p {
+    margin: 0;
+    color: $colorWhite !important;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  &__title p {
+    font-size: 42px !important;
+  }
+
+  &__subtitle p {
+    font-size: 23px !important;
+  }
+
+  &__spacer {
+    padding-top: rwd(80, $containerWidth) !important;
+
+    &-text {
+      padding-top: rwd(35, $containerWidth) !important;
+    }
+  }
+}
