@@ -1,49 +1,53 @@
-include /section/section.pug
 include /subtitle/subtitle.pug
 include /title-accent/title-accent.pug
 include /paragraph/paragraph.pug
+include /spacer/spacer.pug
 include /credit-badge/credit-badge.pug
 
 mixin section-place()
 
-  +section()(css-class='section section--container-gap section--place')
+  - const className = 'section-place'
+
+  mj-section(css-class=className)
 
     mj-column(width='100%')
 
-      +subtitle('Place and Time')(padding-bottom='56px')
+      +spacer({cssClass: className + '__spacer'})
+
+      +subtitle('Place and Time')
+
+      +spacer({cssClass: className + '__spacer-title'})
 
     mj-column(
-      css-class='section__place'
+      css-class=className + '__column ' + className + '__column-image' + ' credit-badge-wrapper'
       width='50%')
 
-      mj-image(
-        css-class='section__place-image'
-        src=`${imagePath}address_place.jpg`)
+      mj-image(src=`${imagePath}address_place.jpg`)
 
-      +credit-badge('Sylwia Bartyzel', 'D2K1UZr4vxk')(padding-bottom='71.2%')
+      +credit-badge('Sylwia Bartyzel', 'D2K1UZr4vxk')(padding-bottom='70.9375%')
 
-      mj-spacer(css-class='section__place-spacer')
+      +spacer({cssClass: className + '__spacer-m'})
 
-      mj-image(
-        css-class='section__place-image'
-        src=`${imagePath}address_time.jpg`)
+      mj-image(src=`${imagePath}address_time.jpg`)
 
       +credit-badge('Ian Keefe', 'OgcJIKRnRC8')
 
     mj-column(
-      css-class='section__place section__place-time'
+      css-class=className + '__column ' + className + '__column-info'
       width='50%')
 
-      +title-accent('Place')(padding-bottom='8px')
+      +title-accent('Place')
       +paragraph('333 Broome St New York, NY 10002, USA')
 
-      mj-spacer(css-class='section__place-spacer')
+      +spacer({cssClass: className + '__spacer-m'})
 
-      +title-accent('Time')(padding-bottom='8px')
+      +title-accent('Time')
       +paragraph('Dec 25th 2019 at 6.30pm to 12.00am')
 
-      mj-spacer(css-class='section__place-spacer')
+      +spacer({cssClass: className + '__spacer-m'})
 
       +paragraph('Lorem Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus')
 
-  +section()(css-class='section section--container-gap')
+    mj-column(width='100%')
+
+      +spacer({cssClass: className + '__spacer'})

@@ -1,34 +1,35 @@
+@import '../container/container.scss';
+@import '../credit-badge/credit-badge.scss';
+@import '../paragraph/paragraph.scss';
 @import '../subtitle/subtitle.scss';
+@import '../title-accent/title-accent.scss';
 
-.section {
-  &__place {
-    position: relative !important;
+.section-place {
+  @extend %container;
+
+  &__column {
     max-width: 400px !important;
 
-    &-time {
-      padding-top: 7.5%;
+    &-info {
+      div {
+        padding-top: rwd(8, $containerWidth/2) !important;
 
-      @include mq {
-        padding-top: 1.25% !important;
-      }
-
-      > table > tbody > tr > td {
         @include mq {
-          padding-left: 7.5% !important;
+          padding-left: rwd(24, $containerWidth/2) !important;
         }
       }
     }
   }
 
-  &__place-spacer {
-    padding-bottom: 7.5% !important;
+  &__spacer {
+    padding-top: rwd(80, $containerWidth) !important;
 
-    > div {
-      height: 100% !important;
+    &-title {
+      padding-top: rwd(40, $containerWidth) !important;
     }
-  }
 
-  &--place {
-    @extend %container;
+    &-m {
+      padding-top: rwd(24, $containerWidth/2) !important;
+    }
   }
 }
