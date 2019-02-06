@@ -3,9 +3,10 @@ include /button/button.pug
 mixin card(data)
 
   mj-section(css-class='card')&attributes(attributes)
+
     mj-column(
       width='50%'
-      css-class='card__column card__image')
+      css-class='card__column card__image credit-badge-wrapper')
 
       mj-image(src=`${imagePath}${data.img}`)
 

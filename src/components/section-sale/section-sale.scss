@@ -1,15 +1,16 @@
+@import '../container/container.scss';
 @import '../subtitle/subtitle.scss';
 @import '../card/card.scss';
 
-.section--sale {
+.section-sale {
+  @extend %container;
   background-color: $colorSectionBackground !important;
 
-  &-last {
-    background-color: $colorSectionBackground !important;
-    padding-bottom: 80px !important;
-  }
+  &__spacer {
+    padding-top: rwd(80, $containerWidth) !important;
 
-  @include mq {
-    padding-bottom: 42px !important;
+    &-subtitle {
+      padding-top: rwd(40, $containerWidth) !important;
+    }
   }
 }

@@ -1,15 +1,21 @@
-include /section/section.pug
 include /subtitle/subtitle.pug
 include /card/card.pug
+include /spacer/spacer.pug
 include /credit-badge/credit-badge.pug
 
 mixin section-sale()
 
-  +section()(css-class='section section--sale section--container section--container-gap')
+  - const className = 'section-sale'
+
+  mj-section(css-class=className)
 
     mj-column(width='100%')
 
+      +spacer({cssClass: className + '__spacer'})
+
       +subtitle('Christmas Sale')
+
+      +spacer({cssClass: className + '__spacer-subtitle'})
 
   +card({
     type: 'left',
@@ -30,4 +36,8 @@ mixin section-sale()
 
     +credit-badge('Tamara Bellis', 'nOnT17lKYz8')
 
-  +section()(css-class='section section--sale-last')
+  mj-section(css-class=className)
+
+    mj-column(width='100%')
+
+      +spacer({cssClass: className + '__spacer'})

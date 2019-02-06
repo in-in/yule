@@ -1,4 +1,5 @@
 @import '../button/button.scss';
+@import '../credit-badge/credit-badge.scss';
 
 .card {
   background-color: $colorSectionBackground !important;
@@ -19,10 +20,6 @@
       height: auto !important;
       display: table-cell !important;
     }
-  }
-
-  &__image {
-    position: relative !important;
   }
 
   &__info {
