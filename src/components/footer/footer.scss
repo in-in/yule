@@ -1,8 +1,10 @@
+@import '../container/container.scss';
+@import '../credit-badge/credit-badge.scss';
+
 .footer {
+  @extend %container;
   height: 352px !important;
   max-height: 352px !important;
-  position: relative !important;
-  @extend %container;
 
   &__text {
     p {
@@ -20,10 +22,10 @@
   }
 
   &__spacer {
-    padding-top: 15.625% !important;
+    padding-top: rwd(16, $containerWidth) !important;
 
-    > div {
-      height: 100% !important;
+    &-top {
+      padding-top: rwd(100, $containerWidth) !important;
     }
   }
 }
