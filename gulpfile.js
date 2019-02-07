@@ -88,7 +88,7 @@ const styles = () =>
     .pipe(
       sass({
         outputStyle: 'expanded',
-        includePaths: './src/components'
+        includePaths: path.components
       })
     )
     .pipe(postcss(plugins))
