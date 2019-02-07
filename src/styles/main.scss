@@ -9,6 +9,6 @@
 @import '../components/footer/footer.scss';
 
 .body {
-  max-width: 800px !important;
+  max-width: $layoutWidth + px !important;
   margin: 0 auto;
 }

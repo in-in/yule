@@ -1,10 +1,10 @@
 %container {
-  max-width: 640px !important;
+  max-width: $containerWidth + px !important;
   padding-left: 10px;
   padding-right: 10px;
 
   @include mq {
-    padding-left: rwd(80, 800) !important;
-    padding-right: rwd(80, 800) !important;
+    padding-left: rwd(80, $layoutWidth) !important;
+    padding-right: rwd(80, $layoutWidth) !important;
   }
 }

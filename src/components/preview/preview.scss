@@ -3,7 +3,7 @@
 
   &__image {
     @include mq {
-      width: rwd(216, 640) !important;
+      width: rwd(216, $containerWidth) !important;
       max-width: 216px !important;
     }
   }
@@ -12,10 +12,10 @@
     padding-top: 8px;
 
     @include mq {
-      width: rwd(376, 640) !important;
+      width: rwd(376, $containerWidth) !important;
       max-width: 376px !important;
-      padding-left: rwd(24, 640);
-      padding-right: rwd(24, 640);
+      padding-left: rwd(24, $containerWidth);
+      padding-right: rwd(24, $containerWidth);
     }
   }
 }
