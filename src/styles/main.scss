@@ -1,12 +1,23 @@
-@import 'variables.scss';
-@import 'helpers.scss';
-@import '../components/hero/hero.scss';
-@import '../components/section-desc/section-desc.scss';
-@import '../components/section-sale/section-sale.scss';
-@import '../components/section-party/section-party.scss';
-@import '../components/announcement/announcement.scss';
-@import '../components/section-place/section-place.scss';
-@import '../components/footer/footer.scss';
+@import 'variables';
+@import 'helpers';
+
+@import 'announcement/announcement';
+@import 'button/button';
+@import 'card/card';
+@import 'container/container';
+@import 'credit-badge/credit-badge';
+@import 'footer/footer';
+@import 'heading/heading';
+@import 'hero/hero';
+@import 'logo/logo';
+@import 'paragraph/paragraph';
+@import 'preview/preview';
+@import 'section-desc/section-desc';
+@import 'section-party/section-party';
+@import 'section-place/section-place';
+@import 'section-sale/section-sale';
+@import 'subtitle/subtitle';
+@import 'title-accent/title-accent';
 
 .body {
   max-width: $layoutWidth + px !important;

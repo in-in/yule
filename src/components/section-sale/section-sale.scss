@@ -1,7 +1,3 @@
-@import '../container/container.scss';
-@import '../subtitle/subtitle.scss';
-@import '../card/card.scss';
-
 .section-sale {
   @extend %container;
   background-color: $colorSectionBackground !important;

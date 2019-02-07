@@ -85,7 +85,12 @@ const plugins = [
 const styles = () =>
   src(path.styles.src)
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(sass({ outputStyle: 'expanded' }))
+    .pipe(
+      sass({
+        outputStyle: 'expanded',
+        includePaths: './src/components'
+      })
+    )
     .pipe(postcss(plugins))
     .pipe(dest(path.styles.build));
 
